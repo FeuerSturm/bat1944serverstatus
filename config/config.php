@@ -54,7 +54,7 @@ $countryflag_set = "";
 $show_gamemode = true;
 // Show the query port instead of the connection port?
 // false = show connection port | true = show query port
-$show_queryport = true;
+$show_queryport = false;
 // Max length of server name before cropping it and adding "..." to the name
 $servername_maxchars = 35;
 // Cache time in seconds to save some resources:

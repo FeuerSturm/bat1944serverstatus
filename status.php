@@ -176,7 +176,7 @@
 	AddShadowedText($baseimg, $font, $font_size, 162, 64, $desc_map . ":", $desc_textcolor_alloc, $desc_shadowcolor_alloc, true);
 	AddShadowedText($baseimg, $font, $font_size, 162, 81, $desc_players . ":", $desc_textcolor_alloc, $desc_shadowcolor_alloc, true);
 	
-	$trimmedname = trim($rules['bat_name_s']);
+	$trimmedname = preg_replace('/\s+\(RELEASE-\d+\)/', '', trim($rules['bat_name_s']));
 	if(strlen($trimmedname) > $servername_maxchars)
 	{
 		$hostname = substr($trimmedname, 0, $servername_maxchars) . "...";
