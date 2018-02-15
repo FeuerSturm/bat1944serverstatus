@@ -1,5 +1,5 @@
 # Battalion1944 Live Gameserver Status Banner
-![Example](https://feuersturm.info/bat1944/examples/banner3.png)
+![Example](https://feuersturm.github.io/examples/bat1944_banner.png)
 
 The Bat1944 Live Gameserver Status Banner highly customizable and yet still works right out of the box if you're fine with the default settings!
 
