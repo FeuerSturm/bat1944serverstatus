@@ -86,7 +86,7 @@
 	}
 	if(file_exists($cachefile) AND (time() - filemtime($cachefile) <= $cache_time))
 	{
-		$contentdisp = 'Content-Disposition: inline; filename="banner.png"';
+		$contentdisp = 'Content-Disposition: inline; filename="bat1944_banner.png"';
 		header('content-type: image/png');
 		header($contentdisp);
 		readfile($cachefile);
@@ -219,6 +219,7 @@
 	AddShadowedText($baseimg, $font, $font_size , 170, 47, $ipinfo, $data_textcolor_alloc, $data_shadowcolor_alloc);
 	AddShadowedText($baseimg, $font, $font_size , 170, 64, $mapinfo, $data_textcolor_alloc, $data_shadowcolor_alloc);
 	AddShadowedText($baseimg, $font, $font_size , 170, 81, $playerinfo, $data_textcolor_alloc, $data_shadowcolor_alloc);
+	AddShadowedText($baseimg, $font, 8, 456, 95, "Battalion 1944", $data_textcolor_alloc, $data_shadowcolor_alloc, true);
 	
 	imagepng($baseimg, $cachefile, 1);
 	imagedestroy($baseimg);
